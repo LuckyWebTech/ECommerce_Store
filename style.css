@@ -683,7 +683,7 @@ footer .copyright{
 }
 
 footer .copyright p a{
-  color: var(--blue);
+  color: coral;
   font-weight: 600;
 }
 
@@ -868,5 +868,9 @@ footer .top .fa-angle-up{
 
   #review .review_container .slide_container .comment p{
     line-height: 1;
+  }
+
+  footer .copyright p{
+    font-size: 12px;
   }
 }
