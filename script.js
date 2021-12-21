@@ -1,3 +1,4 @@
+// navigation, getting elements 
 let menu = document.querySelector('#menuBtn .menu');
 let closeMenu = document.querySelector('#menuBtn .close_menu');
 let sideNav = document.querySelector('.sideNav');
@@ -14,18 +15,15 @@ let reviewContainer = document.querySelector('.review_container');
 let slideStatus = 1;
 let timerLoop = 5000;
 
+// navigatipn function
 menu.addEventListener('click', () => {
-  sideNav.style.width = '100%';
-  sideNav.style.height = '350px';
-  sideNav.style.borderRadius = '10px';
+  sideNav.style.height = '400px';
   menu.style.display = 'none';
   closeMenu.style.display = 'flex';
 });
 
 closeMenu.addEventListener('click', () => {
-  sideNav.style.width = '0';
   sideNav.style.height = '0';
-  sideNav.style.borderRadius = '10px';
   menu.style.display = 'flex';
   closeMenu.style.display = 'none';
 });
