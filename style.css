@@ -12,6 +12,10 @@ font-family: 'Lexend Deca', sans-serif;
   text-decoration: none;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 body{
   font-family: 'Lexend Deca', sans-serif;
 }
@@ -161,7 +165,7 @@ body{
 }
 
 /* categories section styling */
-.categories{
+#categories{
   padding: 20px 0;
   display: flex;
   flex-flow: wrap;
@@ -169,7 +173,7 @@ body{
   justify-content: center;
 }
 
-.categories .col1{
+#categories .col1{
   height: 300px;
   margin: 30px;
   width: 300px;
