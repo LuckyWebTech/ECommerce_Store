@@ -1,0 +1,833 @@
+@import url('https://fonts.googleapis.com/css2?family=David+Libre&family=Lexend+Deca&display=swap');
+
+/* 
+font-family: 'David Libre', serif;
+font-family: 'Lexend Deca', sans-serif;
+*/
+
+*{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+body{
+  font-family: 'Lexend Deca', sans-serif;
+}
+
+:root{
+  --black: #111;
+  --white: #fff;
+  --blue: #003cff;
+  --lightgrey: #cfcfcf;
+  --grey: #808080;
+  --lightblack: #444;
+}
+
+#home{
+  height: 100vh;
+  width: 100%;
+}
+
+#home video{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.overlay{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 17, 71, 0.568);
+  mix-blend-mode: overlay;
+}
+
+#home nav{
+  width: 100%;
+  position: absolute;
+  height: 75px;
+  z-index: 2;
+}
+
+#home nav .logo{
+  font-size: 25px;
+  color: var(--white);
+  margin-left: 70px;
+  line-height: 75px;
+}
+
+#home nav .logo span{
+  color: var(--blue);
+}
+
+#home nav .sideNav{
+  float: right;
+  margin-right: 70px;
+  transition: all ease-in-out 200ms;
+}
+
+#home nav .sideNav ul li{
+  display: inline-block;
+  margin: 0 16px;
+  line-height: 75px;
+}
+
+#home nav .sideNav ul li a{
+  color: var(--white);
+  font-size: 18px;
+}
+
+#home #menuBtn{
+  position: relative;
+  float: right;
+  right: 70px;
+  top: 15px;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2000;
+  display: none;
+}
+
+#home #menuBtn img{
+  position: absolute;
+  width: 30px;
+  cursor: pointer;
+}
+
+.scroll_button{
+  position: absolute;
+  height: 55px;
+  width: 55px;
+  border-radius: 50%;
+  border: 2px solid var(--white);
+  bottom: 10%;
+  left: 50%;
+  transform: translate(-50%);
+  background-image: url(assets/arrow.PNG);
+  background-position: center;
+  background-size: 60%;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  transition: all ease-in-out 500ms;
+}
+
+/* Styling home content  */
+#home .home_content{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#home .home_content .text_col{
+  position: relative;
+  top: -50px;
+  text-align: center;
+  color: var(--white);
+}
+
+.reslater{
+  display: none;
+}
+
+#home .home_content .text_col p:nth-child(1){
+  font-size: 65px;
+}
+
+#home .home_content .text_col p:nth-child(2){
+  font-size: 30px;
+}
+
+#home .home_content .text_col .btn{
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  padding: 12px;
+  background: var(--blue);
+  font-size: 16px;
+  color: var(--white);
+  border-radius: 30px;
+  margin: 12px 0;
+}
+
+/* categories section styling */
+.categories{
+  padding: 20px 0;
+  display: flex;
+  flex-flow: wrap;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.categories .col1{
+  height: 300px;
+  margin: 30px;
+  width: 300px;
+}
+
+/* adding categories images */
+.col1_img1{
+  background-image: url(assets/pro_img/1_ASUS\ AiO\ All-in-One\ Desktop\ PC\,\ 23.8\(579\)_.jpg);
+  background-position: center;
+  background-size: 70%;
+  -o-background-size: 70%;
+  -webkit-background-size: 70%;
+  background-repeat: no-repeat;
+}
+
+.col1_img2{
+  background-image: url(assets/pro_img/2_Canon\ GX6020\ All-in-One\ Wireless\ Supertank\ Printer\ for\ Businesses.jpg);
+  background-position: center;
+  background-size: 70%;
+  -o-background-size: 70%;
+  -webkit-background-size: 70%;
+  background-repeat: no-repeat;
+}
+
+.col1_img3{
+  background-image: url(assets/pro_img/3_Corsair\ K55\ RGB\ Gaming\ Keyboard\ –\ IP42\ Dust\ and\ Water\ Resistance\(49\)_.jpg);
+  background-position: center;
+  background-size: 70%;
+  -o-background-size: 70%;
+  -webkit-background-size: 70%;
+  background-repeat: no-repeat;
+}
+
+/* Products Section styling */
+#products{
+  padding: 12px 0;
+  overflow: hidden;
+}
+
+#products .section_header_container{
+  text-align: center;
+  font-size: 25px;
+  margin-top: 40px;
+}
+
+#products .section_header_container .underline{
+  width: 150px;
+  height: 5px;
+  background:var(--blue);
+  border-radius: 10px;
+  margin: auto;
+  margin-bottom: 60px;
+}
+
+#products .popular .product_container,
+#products .latest .product_container{
+  width: 100%;
+  padding: 12px 0;
+  display: flex;
+  flex-direction: row;
+  flex-flow: wrap;
+  justify-content: center;
+}
+
+#products .popular .header,
+#products .latest .header{
+    padding: 12px;
+    width: 300px;
+    background:var(--blue);
+    border-radius: 30px;
+}
+
+#products .popular .header{
+  float: left;
+  margin-left: -50px;
+}
+
+#products .latest .header{
+  float: right;
+  margin-right: -50px;
+}
+
+#products .popular .header p,
+#products .latest .header p{
+  font-size: 20px;
+  color: var(--white);
+}
+
+#products .popular .header p{
+  float: right;
+}
+
+.bottom_margin{
+  margin-bottom: 30px;
+}
+
+#products .popular .product_container .col2,
+#products .latest .product_container .col2{
+  width: 230px;
+  margin: 20px;
+}
+
+#products .popular .product_container .col2 .product_image,
+#products .latest .product_container .col2 .product_image{
+  height: 230px;
+  width: 230px;
+}
+
+#products .popular .product_container .col2 .product_title,
+#products .latest .product_container .col2 .product_title{
+  padding: 12px 0;
+  text-align: center;
+}
+#review .review_container .slide_container .rating,
+#products .popular .product_container .col2 .product_title .rating,
+#products .latest .product_container .col2 .product_title .rating{
+  color: var(--blue);
+}
+
+#products .popular .product_container .col2 .product_title p:nth-child(3),
+#products .latest .product_container .col2 .product_title p:nth-child(3){
+  font-size: 17px;
+  color: var(--black);
+}
+
+.strike{
+  text-decoration: line-through;
+}
+
+#products .popular .product_container .col2 .product_title p:nth-child(2),
+#products .latest .product_container .col2 .product_title p:nth-child(2){
+  font-size: 15px;
+  color: var(--lightblack);
+  margin: 7px 0;
+}
+
+#products .popular .product_container .col2 .product_title .exp_btn,
+#products .latest .product_container .col2 .product_title .exp_btn{
+  font-size: 16px;
+  background:var(--blue);
+  padding: 7px 12px;
+  border-radius: 30px;
+  border: none;
+  outline: none;
+  color: var(--white);
+  margin: 7px 0;
+  cursor: pointer;
+
+}
+
+/* adding Products images */
+.p_img1{
+  background-image: url(assets/pro_img/5_HP\ 15-inch\ Laptop\,.jpg);
+  background-position: center;
+  background-size: 80%;
+  -webkit-background-size: 80%;
+  -moz-background-size: 80%;
+  -o-background-size: 80%;
+  background-repeat: no-repeat;
+}
+
+.p_img2{
+  background-image: url(assets/pro_img/2_Canon\ GX6020\ All-in-One\ Wireless\ Supertank\ Printer\ for\ Businesses.jpg);
+  background-position: center;
+  background-size: 80%;
+  -webkit-background-size: 80%;
+  -moz-background-size: 80%;
+  -o-background-size: 80%;
+  background-repeat: no-repeat;
+}
+
+.p_img3{
+  background-image: url(assets/pro_img/8_Samsung\ Galaxy\ A21s.jpg);
+  background-position: center;
+  background-size: 80%;
+  -webkit-background-size: 80%;
+  -moz-background-size: 80%;
+  -o-background-size: 80%;
+  background-repeat: no-repeat;
+}
+
+.p_img4{
+  background-image: url(assets/pro_img/9_Sceptre\ IPS\ 27.jpg);
+  background-position: center;
+  background-size: 80%;
+  -webkit-background-size: 80%;
+  -moz-background-size: 80%;
+  -o-background-size: 80%;
+  background-repeat: no-repeat;
+}
+
+.p_img5{
+  background-image: url(assets/pro_img/7_Logitech\ MX\ Anywhere\ 2S\ Wireless\ Mouse_.jpg);
+  background-position: center;
+  background-size: 80%;
+  -webkit-background-size: 80%;
+  -moz-background-size: 80%;
+  -o-background-size: 80%;
+  background-repeat: no-repeat;
+}
+
+.p_img6{
+  background-image: url(assets/pro_img/4_DYMO\ 1755120\ LabelWriter\ 4XL\ Thermal\ Label\ Printer\(201\)_.jpg);
+  background-position: center;
+  background-size: 80%;
+  -webkit-background-size: 80%;
+  -moz-background-size: 80%;
+  -o-background-size: 80%;
+  background-repeat: no-repeat;
+}
+
+.p_img7{
+  background-image: url(assets/pro_img/3_Corsair\ K55\ RGB\ Gaming\ Keyboard\ –\ IP42\ Dust\ and\ Water\ Resistance\(49\)_.jpg);
+  background-position: center;
+  background-size: 80%;
+  -webkit-background-size: 80%;
+  -moz-background-size: 80%;
+  -o-background-size: 80%;
+  background-repeat: no-repeat;
+}
+
+.p_img8{
+  background-image: url(assets/pro_img/1_ASUS\ AiO\ All-in-One\ Desktop\ PC\,\ 23.8\(579\)_.jpg);
+  background-position: center;
+  background-size: 80%;
+  -webkit-background-size: 80%;
+  -moz-background-size: 80%;
+  -o-background-size: 80%;
+  background-repeat: no-repeat;
+}
+
+.p_img9{
+  background-image: url(assets/pro_img/6_Lenovo\ Chromebook\ C330\ 2-in-1\ Convertible\ Laptop_.jpg);
+  background-position: center;
+  background-size: 80%;
+  -webkit-background-size: 80%;
+  -moz-background-size: 80%;
+  -o-background-size: 80%;
+  background-repeat: no-repeat;
+}
+
+.p_img10{
+  background-image: url(assets/pro_img/7_Logitech\ MX\ Anywhere\ 2S\ Wireless\ Mouse_.jpg);
+  background-position: center;
+  background-size: 80%;
+  -webkit-background-size: 80%;
+  -moz-background-size: 80%;
+  -o-background-size: 80%;
+  background-repeat: no-repeat;
+}
+
+.p_img11{
+  background-image: url(assets/pro_img/1_ASUS\ AiO\ All-in-One\ Desktop\ PC\,\ 23.8\(579\)_.jpg);
+  background-position: center;
+  background-size: 80%;
+  -webkit-background-size: 80%;
+  -moz-background-size: 80%;
+  -o-background-size: 80%;
+  background-repeat: no-repeat;
+}
+
+.p_img12{
+  background-image: url(assets/pro_img/9_Sceptre\ IPS\ 27.jpg);
+  background-position: center;
+  background-size: 80%;
+  -webkit-background-size: 80%;
+  -moz-background-size: 80%;
+  -o-background-size: 80%;
+  background-repeat: no-repeat;
+}
+
+/* Exclusive product styling */
+#exclusive{
+  padding: 12px 0;
+}
+
+#exclusive .container{
+  padding: 12px 0;
+  background: radial-gradient(rgb(225, 225, 255),rgb(152, 152, 253));
+  display: flex;
+  flex-direction: row;
+  flex-flow: wrap;
+  justify-content: center;
+}
+
+#exclusive .container .product_image,
+#exclusive .container .product_title{
+  height: 450px;
+  width: 450px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#exclusive .container .product_image{
+  background-image: url(assets/pro_img/exclusive.PNG);
+  background-position: center;
+  background-size: 70%;
+  -webkit-background-size: 70%;
+  -moz-background-size: 70%;
+  -o-background-size: 70%;
+  background-repeat: no-repeat;
+}
+
+#exclusive .container .product_title p:nth-child(1){
+  margin-bottom: 25px;
+  font-size: 18px;
+}
+
+#exclusive .container .product_title p:nth-child(2){
+  margin-bottom: 25px;
+  font-size: 35px;
+}
+
+#exclusive .container .product_title p:nth-child(3){
+  margin-bottom: 25px;
+}
+
+#exclusive .container .product_title a{
+  padding: 7px;
+  background: var(--blue);
+  width: 100px;
+  text-align: center;
+  font-size: 16px;
+  color: var(--white);
+  border-radius: 30px;
+}
+
+/* Customers review styling */
+#review{
+  padding-bottom: 40px;
+}
+
+#review .section_header{
+  color: var(--black);
+  font-weight: bold;
+  text-align: center;
+  font-size: 20px;
+  margin: 50px 0;
+}
+
+#review .review_container{
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+  border-radius: 50%;
+  height: 400px;
+  width: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  box-shadow: 2px 2px 12px rgba(0,0,0,0.3);
+}
+
+#review .review_container .fab{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 30px;
+  background: radial-gradient(at top left, rgba(255, 255, 255, 0.102),rgba(0, 0, 0, 0.096), rgba(255, 255, 255, 0.068));
+  color: var(--blue);
+  padding: 30px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+#review .review_container .fab:hover{
+  background: radial-gradient(at top left, rgba(255, 255, 255, 0.102), rgba(0, 0, 0, 0.096));
+  color: var(--lightblack)
+}
+
+#review .review_container .fa-arrow-left{
+  left: -180px;
+}
+
+#review .review_container .fa-arrow-right{
+  right: -180px;
+}
+
+#review .review_container .slide_container{
+  position: absolute;
+  height: 400px;
+  width: 400px;
+  border-radius: 50%;
+  padding: 25px;
+  text-align: center;
+  line-height: 1.5;
+  transition: all ease-in-out 500ms;
+}
+
+#review .review_container .slide_container .profile{
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+  border: 5px solid var(--white);
+  margin: 20px auto;
+  box-shadow: 2px 2px 12px rgba(0,0,0,0.3);
+}
+
+.slide1{
+  background: rgb(255, 227, 227);
+}
+
+.slide2{
+  background: rgb(255, 246, 222);
+}
+
+.slide3{
+  background: rgb(233, 250, 255);
+}
+
+.slide4{
+  background: rgb(248, 235, 255);
+}
+
+#review .review_container .slide_container .user1{
+  background-image: url(assets/customers/user1.jpg);
+  background-position: center;
+  background-size: 100%;
+  -webkit-background-size: 100%;
+  -moz-background-size: 100%;
+  -o-background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+#review .review_container .slide_container .user2{
+  background-image: url(assets/customers/user2.jpg);
+  background-position: center;
+  background-size: 100%;
+  -webkit-background-size: 100%;
+  -moz-background-size: 100%;
+  -o-background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+#review .review_container .slide_container .user3{
+  background-image: url(assets/customers/user3.jpg);
+  background-position: center;
+  background-size: 100%;
+  -webkit-background-size: 100%;
+  -moz-background-size: 100%;
+  -o-background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+#review .review_container .slide_container .user4{
+  background-image: url(assets/customers/user4.jpg);
+  background-position: center;
+  background-size: 100%;
+  -webkit-background-size: 100%;
+  -moz-background-size: 100%;
+  -o-background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+/* footer section stryling */
+footer{
+  padding: 20px;
+  background: #141625;
+}
+
+footer .social_link{
+  padding: 12px 0;
+  text-align: center;
+  font-size: 22px;
+  line-height: 1.5em;
+  color: var(--white);
+  border-bottom: 1px solid var(--grey);
+}
+
+footer .social_link .icons a .fab{
+  margin: 0 7px;
+  color: var(--lightgrey);
+}
+
+footer .col_container{
+  padding: 12px 0;
+  display: flex;
+  flex-direction: row;
+  flex-flow: wrap;
+  align-items: center;
+  justify-content: space-around;
+  border-bottom: 1px solid var(--grey);
+}
+
+footer .col_container .col{
+  width: 250px;
+  padding: 12px;
+  color: var(--white);
+  line-height: 1.5em;
+}
+
+footer .col_container .col:nth-child(1) a{
+  color: var(--lightgrey);
+}
+
+footer .col_container .col p{
+  color: var(--lightgrey);
+}
+
+footer .copyright{
+  text-align: center;
+  color: var(--white);
+  padding-top:12px;
+}
+
+footer .copyright p a{
+  color: var(--blue);
+  font-weight: 600;
+}
+
+
+
+/* Responsive Styling */
+@media only screen and (max-width: 899px) {
+  #exclusive .container .product_title{
+    display: flex;
+    align-items: center;
+    margin-top: -150px;
+    padding: 0 20px;
+  }
+}
+
+@media only screen and (max-width: 896px) {
+  #home #menuBtn{
+    display: flex;
+  }
+
+  #home nav .sideNav{
+    background: rgba(36, 72, 255, 0.822);
+    position: absolute;
+    width: 0;
+    z-index: 10;
+    padding: 20px 0;
+    height: 0;
+    overflow: hidden;
+    border-radius: 50%;
+  }
+
+  #home nav .sideNav ul li{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: -20px 0;
+  }
+
+  #home #menuBtn .close_menu{
+    display: none;
+  }
+
+  .reslater{
+    display: block;
+  }
+
+  #home .home_content .text_col p:nth-child(1){
+    font-size: 55px;
+  }
+  
+  #home .home_content .text_col p:nth-child(2){
+    font-size: 25px;
+  }
+}
+
+@media only screen and (max-width: 889px) {
+  #review .review_container{
+    height: 300px;
+    width: 300px;
+  }
+  #review .review_container .fa-arrow-left{
+    left: -110px;
+  }
+  
+  #review .review_container .fa-arrow-right{
+    right: -110px;
+  }
+  #review .review_container .slide_container{
+    height: 300px;
+    width: 300px;
+  }
+  #review .review_container .slide_container .profile{
+    height: 80px;
+    width: 80px;
+    margin: 0px auto;
+  }
+}
+
+@media only screen and (max-width: 620px) {
+  #review .review_container .fab{
+    font-size: 15px;
+    padding: 14px;
+  }
+
+  #review .review_container .fa-arrow-left{
+    left: -75px;
+  }
+  
+  #review .review_container .fa-arrow-right{
+    right: -75px;
+  }
+}
+
+@media only screen and (max-width: 560px) {
+  #review .review_container{
+    height: 250px;
+    width: 250px;
+    border-radius: 5px;
+  }
+#review .review_container .slide_container{
+    height: 250px;
+    width: 250px;
+    border-radius: 5px;
+  }
+
+  #review .review_container .fa-arrow-left{
+    left: -30px;
+  }
+  
+  #review .review_container .fa-arrow-right{
+    right: -30px;
+  }
+
+  #review .review_container .fab{
+    font-size: 25px;
+    padding: 30px;
+    z-index: 1;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  #home nav .logo{
+    margin-left: 20px;
+  }
+  
+  #home #menuBtn{
+    right: 20px;
+  }
+
+  #home .home_content .text_col{
+    padding: 20px;
+  }
+
+  #home .home_content .text_col p:nth-child(1){
+    font-size: 40px;
+  }
+  
+  #home .home_content .text_col p:nth-child(2){
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  #review .review_container{
+    height: 250px;
+    width: 200px;
+  }
+#review .review_container .slide_container{
+    height: 250px;
+    width: 200px;
+  }
+}
