@@ -874,6 +874,12 @@ footer .top .fa-angle-up{
   }
 }
 
+@media only screen and (max-width: 386px) {
+  #home .home_content .text_col p:nth-child(1){
+    font-size: 35px;
+  }
+}
+
 @media only screen and (max-width: 355px) {
   #home .home_content .text_col p:nth-child(1){
     font-size: 30px;
