@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="css/all.min.css">
   <link rel="stylesheet" href="css/fontawesome.min.css">
 </head>
+
 <body>
 
 <!-- home section  -->
@@ -18,21 +19,24 @@
     <div class="sideNav">
       <ul>
         <li><a href="index.html">Home</a></li>
-        <li><a href="#categories">Categories</a></li>
-        <li><a href="#products">Products</a></li>
-        <li><a href="">Blog</a></li>
+        <li><a href="#categories" id="categoriesBtn">Categories</a></li>
+        <li><a href="#products" id="productsBtn">Products</a></li>
+        <li><a href="#blogPosts" id="blogBtn">Blog</a></li>
         <li><a href="">About</a></li>
         <li><a href="">Contact</a></li>
       </ul>
     </div>
   </nav>
 
-
+  <!-- menu toggle button  -->
   <div id="menuBtn">
     <img src="assets/menu/menu.png" class="menu">
     <img src="assets/menu/close_menu.png" class="close_menu" id="close_menu">
   </div>
+  
+  <!-- Scroll Button  -->
   <a href="#products"><div class="scroll_button"></div></a>
+  <!-- Home Content  -->
   <div class="home_content">
     <div class="text_col">
       <p>Scroll it Let's do it</p>
@@ -42,302 +46,362 @@
   </div>
 </section>
 
-<!-- categories section  -->
-<section id="categories">
-  <div class="col1 col1_img1"></div>
-  <div class="col1 col1_img2"></div>
-  <div class="col1 col1_img3"></div>
+<!-- first page  -->
+<section class="page_1">
+  <!-- categories section  -->
+  <section id="categories">
+    <div class="col1 col1_img1"></div>
+    <div class="col1 col1_img2"></div>
+    <div class="col1 col1_img3"></div>
+  </section>
+
+  <!-- products section  -->
+  <section id="products">
+    <div class="section_header_container">
+      <h1>Our Products</h1>
+      <div class="underline"></div>
+    </div>
+    <div class="popular">
+      <div class="header bottom_margin"><p>Popular Products</p></div>
+      <div class="product_container bottom_margin">
+        <div class="col2">
+          <div class="product_image p_img1"></div>
+          <div class="product_title">
+            <div class="rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half"></i>
+            </div>
+            <p><span class="strike">$175</span>&nbsp;&nbsp;&nbsp; $75</p>
+            <p>HP 15-inch Laptop...</p>
+            <button class="exp_btn">Explore</button>
+          </div>
+        </div>
+        <div class="col2">
+          <div class="product_image p_img2"></div>
+          <div class="product_title">
+            <div class="rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half"></i>
+            </div>
+            <p><span class="strike">$175</span>&nbsp;&nbsp;&nbsp; $75</p>
+            <p>HP 15-inch Laptop...</p>
+            <button class="exp_btn">Explore</button>
+          </div>
+        </div>
+        <div class="col2">
+          <div class="product_image p_img3"></div>
+          <div class="product_title">
+            <div class="rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half"></i>
+            </div>
+            <p><span class="strike">$175</span>&nbsp;&nbsp;&nbsp; $75</p>
+            <p>HP 15-inch Laptop...</p>
+            <button class="exp_btn">Explore</button>
+          </div>
+        </div>
+        <div class="col2">
+          <div class="product_image p_img4"></div>
+          <div class="product_title">
+            <div class="rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half"></i>
+            </div>
+            <p><span class="strike">$175</span>&nbsp;&nbsp;&nbsp; $75</p>
+            <p>HP 15-inch Laptop...</p>
+            <button class="exp_btn">Explore</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="latest">
+      <div class="header bottom_margin"><p>Latest Products</p></div>
+      <div class="product_container">
+        <div class="col2">
+          <div class="product_image p_img5"></div>
+          <div class="product_title">
+            <div class="rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half"></i>
+            </div>
+            <p><span class="strike">$175</span>&nbsp;&nbsp;&nbsp; $75</p>
+            <p>HP 15-inch Laptop...</p>
+            <button class="exp_btn">Explore</button>
+          </div>
+        </div>
+        <div class="col2">
+          <div class="product_image p_img6"></div>
+          <div class="product_title">
+            <div class="rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half"></i>
+            </div>
+            <p><span class="strike">$175</span>&nbsp;&nbsp;&nbsp; $75</p>
+            <p>HP 15-inch Laptop...</p>
+            <button class="exp_btn">Explore</button>
+          </div>
+        </div>
+        <div class="col2">
+          <div class="product_image p_img7"></div>
+          <div class="product_title">
+            <div class="rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half"></i>
+            </div>
+            <p><span class="strike">$175</span>&nbsp;&nbsp;&nbsp; $75</p>
+            <p>HP 15-inch Laptop...</p>
+            <button class="exp_btn">Explore</button>
+          </div>
+        </div>
+        <div class="col2">
+          <div class="product_image p_img8"></div>
+          <div class="product_title">
+            <div class="rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half"></i>
+            </div>
+            <p><span class="strike">$175</span>&nbsp;&nbsp;&nbsp; $75</p>
+            <p>HP 15-inch Laptop...</p>
+            <button class="exp_btn">Explore</button>
+          </div>
+        </div>
+      </div>
+      <div class="product_container bottom_margin">
+        <div class="col2">
+          <div class="product_image p_img9"></div>
+          <div class="product_title">
+            <div class="rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half"></i>
+            </div>
+            <p><span class="strike">$175</span>&nbsp;&nbsp;&nbsp; $75</p>
+            <p>HP 15-inch Laptop...</p>
+            <button class="exp_btn">Explore</button>
+          </div>
+        </div>
+        <div class="col2">
+          <div class="product_image p_img10"></div>
+          <div class="product_title">
+            <div class="rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half"></i>
+            </div>
+            <p><span class="strike">$175</span>&nbsp;&nbsp;&nbsp; $75</p>
+            <p>HP 15-inch Laptop...</p>
+            <button class="exp_btn">Explore</button>
+          </div>
+        </div>
+        <div class="col2">
+          <div class="product_image p_img11"></div>
+          <div class="product_title">
+            <div class="rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half"></i>
+            </div>
+            <p><span class="strike">$175</span>&nbsp;&nbsp;&nbsp; $75</p>
+            <p>HP 15-inch Laptop...</p>
+            <button class="exp_btn">Explore</button>
+          </div>
+        </div>
+        <div class="col2">
+          <div class="product_image p_img12"></div>
+          <div class="product_title">
+            <div class="rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half"></i>
+            </div>
+            <p><span class="strike">$175</span>&nbsp;&nbsp;&nbsp; $75</p>
+            <p>HP 15-inch Laptop...</p>
+            <button class="exp_btn">Explore</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- exclusive Product section  -->
+  <section id="exclusive">
+    <div class="container">
+      <div class="product_image">
+        <img src="assets/pro_img/exclusive.png">
+      </div>
+      <div class="product_title">
+        <p>Exclusively Available and Limited</p>
+        <p>Samsung Galaxy a22</p>
+        <p>Samsung Galaxy a22 has 150GB storage & 12GB Ram, strong and liable to last long. Get it today at Jeds Store</p>
+        <a href="">Order Now</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Customer Review section  -->
+  <section id="review">
+    <div class="section_header">
+      <h1>What Our Customers are saying</h1>
+    </div>
+    <div class="review_container">
+      <class class="fas fab fa-arrow-left"></class>
+      <class class="fas fab fa-arrow-right"></class>
+      <!-- adding slider for customer review section -->
+      <div class="slide_container slide1">
+        <div class="profile user1"></div>
+        <div class="profile_name">
+          <h2>Anita Ukah</h2>
+        </div>
+        <div class="rating">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star-half"></i>
+        </div>
+        <div class="comment">
+          <p> elit. Illo totam eos incidunt quam autem in ad culpa. Porro consequuntur Lorem, ipsum dolor sit amet consectetur adipisicing</p>
+        </div>
+      </div>
+      <div class="slide_container slide2">
+        <div class="profile user2"></div>
+        <div class="profile_name">
+          <h2>Patience Gloria</h2>
+        </div>
+        <div class="rating">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star-half"></i>
+        </div>
+        <div class="comment">
+          <p>Lorem, ipsum dolor sit amet  incidunt quam autem in ad culpa. Porro consectetur adipisicing elit. Illo totam eos consequuntur</p>
+        </div>
+      </div>
+      <div class="slide_container slide3">
+        <div class="profile user3"></div>
+        <div class="profile_name">
+          <h2>Joy Anita</h2>
+        </div>
+        <div class="rating">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star-half"></i>
+        </div>
+        <div class="comment">
+          <p>cidunt quam autem in adIllo totam eos in Lorem, ipsum dolor sit amet consectetur adipisicing elit.  culpa. Porro consequuntur</p>
+        </div>
+      </div>
+      <div class="slide_container slide4">
+        <div class="profile user4"></div>
+        <div class="profile_name">
+          <h2>Hope Alice</h2>
+        </div>
+        <div class="rating">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star-half"></i>
+        </div>
+        <div class="comment">
+          <p>Illo totam eos incidunt quam autem in ad Lorem, ipsum dolor sit amet consectetur adipisicing elit.  culpa. Porro consequuntur</p>
+        </div>
+      </div>
+    </div>
+  </section>
 </section>
 
-<!-- products section  -->
-<section id="products">
-  <div class="section_header_container">
-    <h1>Our Products</h1>
-    <div class="underline"></div>
-  </div>
-  <div class="popular">
-    <div class="header bottom_margin"><p>Popular Products</p></div>
-    <div class="product_container bottom_margin">
-      <div class="col2">
-        <div class="product_image p_img1"></div>
-        <div class="product_title">
-          <div class="rating">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star-half"></i>
-          </div>
-          <p><span class="strike">$175</span>&nbsp;&nbsp;&nbsp; $75</p>
-          <p>HP 15-inch Laptop...</p>
-          <button class="exp_btn">Explore</button>
-        </div>
-      </div>
-      <div class="col2">
-        <div class="product_image p_img2"></div>
-        <div class="product_title">
-          <div class="rating">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star-half"></i>
-          </div>
-          <p><span class="strike">$175</span>&nbsp;&nbsp;&nbsp; $75</p>
-          <p>HP 15-inch Laptop...</p>
-          <button class="exp_btn">Explore</button>
-        </div>
-      </div>
-      <div class="col2">
-        <div class="product_image p_img3"></div>
-        <div class="product_title">
-          <div class="rating">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star-half"></i>
-          </div>
-          <p><span class="strike">$175</span>&nbsp;&nbsp;&nbsp; $75</p>
-          <p>HP 15-inch Laptop...</p>
-          <button class="exp_btn">Explore</button>
-        </div>
-      </div>
-      <div class="col2">
-        <div class="product_image p_img4"></div>
-        <div class="product_title">
-          <div class="rating">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star-half"></i>
-          </div>
-          <p><span class="strike">$175</span>&nbsp;&nbsp;&nbsp; $75</p>
-          <p>HP 15-inch Laptop...</p>
-          <button class="exp_btn">Explore</button>
-        </div>
-      </div>
+<!-- Second Page  -->
+<section class="page_2">
+<div id="blogPosts"></div>
+  <!-- blog section  -->
+  <section id="blog">
+    <div class="section_header">
+      <h1>Blog Posts</h1>
     </div>
-  </div>
-  <div class="latest">
-    <div class="header bottom_margin"><p>Latest Products</p></div>
-    <div class="product_container">
-      <div class="col2">
-        <div class="product_image p_img5"></div>
-        <div class="product_title">
-          <div class="rating">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star-half"></i>
-          </div>
-          <p><span class="strike">$175</span>&nbsp;&nbsp;&nbsp; $75</p>
-          <p>HP 15-inch Laptop...</p>
-          <button class="exp_btn">Explore</button>
-        </div>
-      </div>
-      <div class="col2">
-        <div class="product_image p_img6"></div>
-        <div class="product_title">
-          <div class="rating">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star-half"></i>
-          </div>
-          <p><span class="strike">$175</span>&nbsp;&nbsp;&nbsp; $75</p>
-          <p>HP 15-inch Laptop...</p>
-          <button class="exp_btn">Explore</button>
-        </div>
-      </div>
-      <div class="col2">
-        <div class="product_image p_img7"></div>
-        <div class="product_title">
-          <div class="rating">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star-half"></i>
-          </div>
-          <p><span class="strike">$175</span>&nbsp;&nbsp;&nbsp; $75</p>
-          <p>HP 15-inch Laptop...</p>
-          <button class="exp_btn">Explore</button>
-        </div>
-      </div>
-      <div class="col2">
-        <div class="product_image p_img8"></div>
-        <div class="product_title">
-          <div class="rating">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star-half"></i>
-          </div>
-          <p><span class="strike">$175</span>&nbsp;&nbsp;&nbsp; $75</p>
-          <p>HP 15-inch Laptop...</p>
-          <button class="exp_btn">Explore</button>
-        </div>
-      </div>
-    </div>
-    <div class="product_container bottom_margin">
-      <div class="col2">
-        <div class="product_image p_img9"></div>
-        <div class="product_title">
-          <div class="rating">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star-half"></i>
-          </div>
-          <p><span class="strike">$175</span>&nbsp;&nbsp;&nbsp; $75</p>
-          <p>HP 15-inch Laptop...</p>
-          <button class="exp_btn">Explore</button>
-        </div>
-      </div>
-      <div class="col2">
-        <div class="product_image p_img10"></div>
-        <div class="product_title">
-          <div class="rating">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star-half"></i>
-          </div>
-          <p><span class="strike">$175</span>&nbsp;&nbsp;&nbsp; $75</p>
-          <p>HP 15-inch Laptop...</p>
-          <button class="exp_btn">Explore</button>
-        </div>
-      </div>
-      <div class="col2">
-        <div class="product_image p_img11"></div>
-        <div class="product_title">
-          <div class="rating">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star-half"></i>
-          </div>
-          <p><span class="strike">$175</span>&nbsp;&nbsp;&nbsp; $75</p>
-          <p>HP 15-inch Laptop...</p>
-          <button class="exp_btn">Explore</button>
-        </div>
-      </div>
-      <div class="col2">
-        <div class="product_image p_img12"></div>
-        <div class="product_title">
-          <div class="rating">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star-half"></i>
-          </div>
-          <p><span class="strike">$175</span>&nbsp;&nbsp;&nbsp; $75</p>
-          <p>HP 15-inch Laptop...</p>
-          <button class="exp_btn">Explore</button>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
 
-<!-- exclusive Product section  -->
-<section id="exclusive">
-  <div class="container">
-    <div class="product_image">
-      <img src="assets/pro_img/exclusive.png">
-    </div>
-    <div class="product_title">
-      <p>Exclusively Available and Limited</p>
-      <p>Samsung Galaxy a22</p>
-      <p>Samsung Galaxy a22 has 150GB storage & 12GB Ram, strong and liable to last long. Get it today at Jeds Store</p>
-      <a href="">Order Now</a>
-    </div>
-  </div>
-</section>
+    <div class="col_container">
+      <div class="row">
+        <div class="col">
+          <div class="post_image img_1"></div>
+          <div class="post_title">
+            <p>15th January, 2022 | <i class="fas fa-clock"></i> 12:30pm</p>
+            <h3>Top 3 Best Phones to use in 2022, these phones have
+              been tested and trusted to......<a href="#">Read More</a></h3>
+          </div>
+        </div>
+        <div class="col">
+          <div class="post_image img_2"></div>
+          <div class="post_title">
+            <p>15th January, 2022 | <i class="fas fa-clock"></i> 12:30pm</p>
+            <h3>Why the Sceptre Monitor is the best for Programmers,
+              in this post you find out why the spectre.......<a href="#">Read More</a></h3>
+          </div>
+        </div>
+      </div>
 
-<!-- Customer Review section  -->
-<section id="review">
-  <div class="section_header">
-    <h1>What Our Customers are saying</h1>
-  </div>
-  <div class="review_container">
-    <class class="fas fab fa-arrow-left"></class>
-    <class class="fas fab fa-arrow-right"></class>
-    <!-- adding slider for customer review section -->
-    <div class="slide_container slide1">
-      <div class="profile user1"></div>
-      <div class="profile_name">
-        <h2>Anita Ukah</h2>
-      </div>
-      <div class="rating">
-        <i class="fas fa-star"></i>
-        <i class="fas fa-star"></i>
-        <i class="fas fa-star"></i>
-        <i class="fas fa-star"></i>
-        <i class="fas fa-star-half"></i>
-      </div>
-      <div class="comment">
-        <p> elit. Illo totam eos incidunt quam autem in ad culpa. Porro consequuntur Lorem, ipsum dolor sit amet consectetur adipisicing</p>
+      <div class="row">
+        <div class="col">
+          <div class="post_image img_3"></div>
+          <div class="post_title">
+            <p>15th January, 2022 | <i class="fas fa-clock"></i> 12:30pm</p>
+            <h3>The colored Wirless Canon Printer will replace other Printers
+              in 2022, here's why and reason you need to buy it.....<a href="#">Read More</a></h3>
+          </div>
+        </div>
+        <div class="col">
+          <div class="post_image img_4"></div>
+          <div class="post_title">
+            <p>15th January, 2022 | <i class="fas fa-clock"></i> 12:30pm</p>
+            <h3>Why the Tecno Camon 12 is Beating the Tecno camon 15......<a href="#">Read More</a></h3>
+          </div>
+        </div>
       </div>
     </div>
-    <div class="slide_container slide2">
-      <div class="profile user2"></div>
-      <div class="profile_name">
-        <h2>Patience Gloria</h2>
-      </div>
-      <div class="rating">
-        <i class="fas fa-star"></i>
-        <i class="fas fa-star"></i>
-        <i class="fas fa-star"></i>
-        <i class="fas fa-star"></i>
-        <i class="fas fa-star-half"></i>
-      </div>
-      <div class="comment">
-        <p>Lorem, ipsum dolor sit amet  incidunt quam autem in ad culpa. Porro consectetur adipisicing elit. Illo totam eos consequuntur</p>
-      </div>
+    <div class="post_slides">
+      <div class="col active">1</div>
+      <div class="col">2</div>
+      <div class="col">3</div>
+      <div class="col">4</div>
+      <div class="col">5</div>
     </div>
-    <div class="slide_container slide3">
-      <div class="profile user3"></div>
-      <div class="profile_name">
-        <h2>Joy Anita</h2>
-      </div>
-      <div class="rating">
-        <i class="fas fa-star"></i>
-        <i class="fas fa-star"></i>
-        <i class="fas fa-star"></i>
-        <i class="fas fa-star"></i>
-        <i class="fas fa-star-half"></i>
-      </div>
-      <div class="comment">
-        <p>cidunt quam autem in adIllo totam eos in Lorem, ipsum dolor sit amet consectetur adipisicing elit.  culpa. Porro consequuntur</p>
-      </div>
-    </div>
-    <div class="slide_container slide4">
-      <div class="profile user4"></div>
-      <div class="profile_name">
-        <h2>Hope Alice</h2>
-      </div>
-      <div class="rating">
-        <i class="fas fa-star"></i>
-        <i class="fas fa-star"></i>
-        <i class="fas fa-star"></i>
-        <i class="fas fa-star"></i>
-        <i class="fas fa-star-half"></i>
-      </div>
-      <div class="comment">
-        <p>Illo totam eos incidunt quam autem in ad Lorem, ipsum dolor sit amet consectetur adipisicing elit.  culpa. Porro consequuntur</p>
-      </div>
-    </div>
-  </div>
+  </section>
 </section>
 
 <!-- footer Section -->

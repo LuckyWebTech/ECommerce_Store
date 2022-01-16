@@ -1,3 +1,21 @@
+// Blog section Getting Elements 
+let blogSectionButton = document.querySelector('#blogBtn');
+let homeSection = document.querySelector('#home');
+
+// Blog section Hide elements 
+let homeContet = document.querySelector('.home_content');
+let scrollButton = document.querySelector('.scroll_button');
+let firstPage = document.querySelector('.page_1');
+
+// Blog section show elements 
+let blogSectionContent = document.querySelector('.page_2');
+
+// categories section button 
+let categoriesBtn = document.querySelector('#categoriesBtn');
+
+// products section button 
+let productsBtn = document.querySelector('#productsBtn');
+
 // navigation, getting elements 
 let menu = document.querySelector('#menuBtn .menu');
 let closeMenu = document.querySelector('#menuBtn .close_menu');
@@ -16,19 +34,27 @@ let slideStatus = 1;
 let timerLoop = 5000;
 
 // navigatipn function
-menu.addEventListener('click', () => {
+let openMenu = () => {
   sideNav.style.height = '400px';
   menu.style.display = 'none';
   closeMenu.style.display = 'flex';
-});
+};
 
-closeMenu.addEventListener('click', () => {
+let foldMenu = () => {
   sideNav.style.height = '0';
   menu.style.display = 'flex';
   closeMenu.style.display = 'none';
+};
+
+menu.addEventListener('click', () => {
+  openMenu();
 });
 
-// Scroll down arrow script 
+closeMenu.addEventListener('click', () => {
+  foldMenu();
+});
+
+// Scroll down arrow function 
 let arrowButtonLoop = () => {
   let circle = document.querySelector('.scroll_button');
   circle.style.height = '70px';
@@ -49,7 +75,7 @@ let arrowButtonLoop = () => {
 
 setInterval(arrowButtonLoop, 5000);
 
-// customer review slider
+// customer review Animation
 let c_reviewSlideLoop = () => {
   if (slideStatus === 1) {
     setTimeout(() => {
@@ -140,3 +166,34 @@ leftArowButton.onmouseleave = () => {
 reviewContainer.onmouseover = () => {
   clearInterval(c_reviewLoopStart);
 };
+
+// Blog Section function 
+blogSectionButton.addEventListener('click', () => {
+  homeSection.classList.add('homeTransform');
+  firstPage.classList.add('hide');
+  homeContet.classList.add('hide');
+  scrollButton.classList.add('hide');
+
+  blogSectionContent.classList.add('active');
+  foldMenu();
+});
+
+// categories section button onclick function 
+categoriesBtn.addEventListener('click', () => {
+  homeSection.classList.remove('homeTransform');
+  firstPage.classList.remove('hide');
+  homeContet.classList.remove('hide');
+  scrollButton.classList.remove('hide');
+
+  foldMenu();
+});
+
+// products section button onlick function 
+productsBtn.addEventListener('click', () => {
+  homeSection.classList.remove('homeTransform');
+  firstPage.classList.remove('hide');
+  homeContet.classList.remove('hide');
+  scrollButton.classList.remove('hide');
+
+  foldMenu();
+});

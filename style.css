@@ -41,6 +41,12 @@ body{
   background-repeat: no-repeat;
 }
 
+#home.homeTransform{
+  height: 50vh;
+  transition: all ease-in-out 0.4s;
+  background-image: url(assets/background/background.jpeg);
+}
+
 #home nav{
   width: 100%;
   position: absolute;
@@ -152,6 +158,21 @@ body{
   border-radius: 30px;
   margin: 12px 0;
 }
+
+/* first page display */
+.page_1.hide,
+.scroll_button.hide,
+#home .home_content.hide{
+  display: none;
+}
+
+/* .scroll_button.hide{
+  display: none;
+}
+
+#home .home_content.hide{
+  display: none;
+} */
 
 /* categories section styling */
 #categories{
@@ -618,6 +639,140 @@ body{
   background-repeat: no-repeat;
 }
 
+/* second page */
+.page_2{
+  display: none;
+}
+
+.page_2.active{
+  display: block;
+}
+
+#blogPosts{
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+}
+
+/* Blog Section styling */
+#blog{
+  padding: 50px;
+}
+
+#blog .section_header h1{
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -200px);
+  color: var(--white);
+  font-size: 50px;
+}
+
+#blog .col_container{
+}
+
+#blog .col_container .row{
+  display: flex;
+  flex-direction: row;
+  flex-flow: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+#blog .col_container .row .col{
+  background: #ffffff;
+  width: 500px;
+  margin: 20px;
+  box-shadow: 0px 0px 200px #cfcfcf;
+  border-radius: 10px;
+}
+
+#blog .col_container .row .col:hover{
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+}
+
+#blog .col_container .row .col .post_image{
+  height: 320px;
+  width: 100%;
+  border-bottom: 1px solid #9c9c9c;
+}
+
+#blog .col_container .row .col .post_title{
+  padding: 0 17px 17px 17px;
+}
+
+#blog .col_container .row .col .post_title p{
+  margin: 12px 0;
+  color: #666;
+  font-weight: lighter;
+}
+
+#blog .col_container .row .col .post_title .fa-clock{
+  color: var(--blue);
+}
+
+#blog .col_container .row .col h3{
+  color: #444;
+  font-size: 22px;
+}
+
+/* Adding blog post images  */
+#blog .col_container .row .col .img_1{
+  background-image: url('assets/pro_img/exclusive.png');
+  background-position: center;
+  background-size: 70%;
+  background-repeat: no-repeat;
+}
+
+#blog .col_container .row .col .img_2{
+  background-image: url('assets/pro_img/9_Sceptre\ IPS\ 27.jpg');
+  background-position: center;
+  background-size: 70%;
+  background-repeat: no-repeat;
+}
+
+#blog .col_container .row .col .img_3{
+  background-image: url('assets/pro_img/2_Canon\ GX6020\ All-in-One\ Wireless\ Supertank\ Printer\ for\ Businesses.jpg');
+  background-position: center;
+  background-size: 60%;
+  background-repeat: no-repeat;
+}
+
+#blog .col_container .row .col .img_4{
+  background-image: url('assets/pro_img/1-677.jpg');
+  background-position: center;
+  background-size: 80%;
+  background-repeat: no-repeat;
+}
+
+#blog .post_slides{
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+#blog .post_slides .col{
+  padding: 12px;
+  height: 20px;
+  width: 20px;
+  user-select: none;
+  border: 2px solid lightgrey;
+  margin: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+#blog .post_slides .active{
+  background: #141625;
+  border: none;
+  color: var(--white)
+}
+
+
 /* footer section stryling */
 footer{
   padding: 20px;
@@ -690,6 +845,18 @@ footer .top .fa-angle-up{
 }
 
 /* Responsive Styling */
+@media only screen and (max-width: 1181px) {
+  #blog .col_container .row .col{
+    width: 400px;
+  }
+}
+
+@media only screen and (max-width: 980px) {
+  #blog .col_container .row .col{
+    width: 500px;
+  }
+}
+
 @media only screen and (max-width: 899px) {
   #exclusive .container .product_title{
     display: flex;
@@ -824,6 +991,33 @@ footer .top .fa-angle-up{
   }
 }
 
+@media only screen and (max-width: 550px) {
+  #blog .col_container .row .col{
+    min-width: 470px;
+  }
+}
+
+@media only screen and (max-width: 510px) {
+  #blog .col_container .row .col{
+    min-width: 430px;
+  }
+
+  #blog .col_container .row .col h3{
+    font-size: 18px;
+  }
+
+  #blog .section_header h1{
+    font-size: 30px;
+  }
+
+  #blog .post_slides .col{
+    padding: 7px;
+    height: 17px;
+    width: 17px;
+    margin: 7px;
+  }
+}
+
 @media only screen and (max-width: 500px) {
   #home nav .logo{
     margin-left: 20px;
@@ -847,6 +1041,18 @@ footer .top .fa-angle-up{
 
   footer .top{
     top: 75%;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  #blog .col_container .row .col{
+    min-width: 400px;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  #blog .col_container .row .col{
+    min-width: 125%;
   }
 }
 
@@ -877,6 +1083,13 @@ footer .top .fa-angle-up{
   #home .home_content .text_col p:nth-child(1){
     font-size: 35px;
   }
+
+  #blog .post_slides .col{
+    padding: 5px;
+    height: 12px;
+    width: 12px;
+    margin: 5px;
+  }
 }
 
 @media only screen and (max-width: 355px) {
@@ -891,5 +1104,25 @@ footer .top .fa-angle-up{
   #home .home_content .text_col .btn{
     padding: 7px;
     font-size: 13px;
+  }
+}
+
+@media only screen and (max-width: 310px) {
+  #blog .section_header h1{
+    font-size: 20px;
+  }
+
+  #blog .col_container .row .col{
+    min-width: 135%;
+  }
+}
+
+@media only screen and (max-width: 254px){
+  #blog .post_slides{
+  overflow-x: scroll;
+  }
+
+  #blog .post_slides .col:nth-child(1) {
+    margin-left: 100px;
   }
 }
